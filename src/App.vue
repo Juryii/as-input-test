@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <as-input></as-input>
+    <as-input v-model="myInput"></as-input>
   </div>
 </template>
 
@@ -9,6 +9,11 @@ import AsInput from "./components/AsInput.vue";
 
 export default {
   name: "App",
+  data() {
+    return {
+      myInput: ''
+    }
+  },
   components: {
     AsInput,
   },
